@@ -68,9 +68,39 @@ src/
 
 El proyecto puede ser desplegado en diversas plataformas:
 
-- **Vercel**: `npx vercel`
-- **Netlify**: Conecta tu repositorio y despliega
-- **GitHub Pages**: Usa `gh-pages` para el despliegue
+### Vercel (Recomendado)
+1. Instala Vercel CLI: `npm i -g vercel`
+2. Ejecuta: `vercel`
+3. Sigue las instrucciones en pantalla
+
+### Netlify
+1. Conecta tu repositorio en [Netlify](https://netlify.com)
+2. Configura:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. ¡Despliega!
+
+### GitHub Pages
+1. Instala: `npm install --save-dev gh-pages`
+2. Agrega a `package.json`:
+   ```json
+   "homepage": "https://tuusuario.github.io/Martos-portafolio-",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+3. Ejecuta: `npm run deploy`
+
+## 🎨 Personalización
+
+Para personalizar el portfolio:
+
+1. **Información personal**: Edita los componentes en `src/components/`
+2. **Colores y tema**: Modifica `src/index.css` (variables de Tailwind)
+3. **Proyectos**: Actualiza el array de proyectos en `src/components/Projects.tsx`
+4. **Habilidades**: Modifica las skills en `src/components/Skills.tsx`
+5. **Información de contacto**: Actualiza `src/components/Contact.tsx` y `Footer.tsx`
 
 ## 📄 Licencia
 
