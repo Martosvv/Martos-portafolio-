@@ -24,145 +24,100 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      {/* Animated Pixel Background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 animate-pulse-neon" style={{
-          backgroundImage: `
-            radial-gradient(circle at 25% 25%, #00f6ff 2px, transparent 2px),
-            radial-gradient(circle at 75% 75%, #ff00ff 2px, transparent 2px)
-          `,
-          backgroundSize: '60px 60px'
-        }}></div>
-      </div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 animate-glitch">
-              <span className="bg-gradient-to-r from-cyan-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent neon-glow">
-                📞 CONTACT ZONE 📞
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Contacto
               </span>
             </h2>
-            <p className="text-cyan-400 text-lg mb-4 animate-fade-in">
-              ▸ READY TO START YOUR NEXT PROJECT?
+            <p className="text-slate-400 text-lg">
+              Hablemos sobre tu próximo proyecto
             </p>
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg border-4 border-yellow-400 animate-pulse-neon">
-              <span className="text-2xl animate-bounce-pixel">⚡</span>
-              <span className="text-white font-bold">LEVEL UP YOUR BUSINESS!</span>
-              <span className="text-2xl animate-bounce-pixel">⚡</span>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Cards */}
-            <div className="space-y-6 animate-slide-in-left">
-              {/* Email Card */}
+            <div className="space-y-6">
               <div className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-                <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-cyan-400 rounded-lg p-6 pixel-shadow transform hover:scale-105 transition-all">
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg p-6 hover:border-blue-500 transition-all">
                   <div className="flex items-center gap-4">
-                    <div className="text-5xl animate-bounce-pixel">
-                      📧
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-cyan-400 mb-1">EMAIL QUEST</h3>
-                      <p className="text-white">martos@ejemplo.com</p>
-                      <p className="text-slate-400 text-xs mt-1">⏰ Response time: 24h</p>
+                      <h3 className="font-bold text-lg text-blue-400 mb-1">Email</h3>
+                      <p className="text-white">Martos.adrian05@gmail.com</p>
                     </div>
                   </div>
-                  {/* Pixel Corners */}
-                  <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-yellow-400"></div>
-                  <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-yellow-400"></div>
-                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-yellow-400"></div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-yellow-400"></div>
                 </div>
               </div>
 
-              {/* GitHub Card */}
               <div className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-                <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-purple-400 rounded-lg p-6 pixel-shadow transform hover:scale-105 transition-all">
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg p-6 hover:border-purple-500 transition-all">
                   <div className="flex items-center gap-4">
-                    <div className="text-5xl animate-float">
-                      🐙
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-purple-400 mb-1">GITHUB HUB</h3>
-                      <p className="text-white">github.com/martos</p>
-                      <p className="text-slate-400 text-xs mt-1">💻 Check out my code!</p>
+                      <h3 className="font-bold text-lg text-purple-400 mb-1">Teléfono</h3>
+                      <p className="text-white">+52 618 217 1064</p>
                     </div>
                   </div>
-                  {/* Pixel Corners */}
-                  <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-yellow-400"></div>
-                  <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-yellow-400"></div>
-                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-yellow-400"></div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-yellow-400"></div>
                 </div>
               </div>
 
-              {/* LinkedIn Card */}
               <div className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-                <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-green-400 rounded-lg p-6 pixel-shadow transform hover:scale-105 transition-all">
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg p-6 hover:border-green-500 transition-all">
                   <div className="flex items-center gap-4">
-                    <div className="text-5xl animate-bounce-pixel">
-                      💼
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                      </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-green-400 mb-1">LINKEDIN LINK</h3>
-                      <p className="text-white">linkedin.com/in/martos</p>
-                      <p className="text-slate-400 text-xs mt-1">🤝 Let's connect!</p>
+                      <h3 className="font-bold text-lg text-green-400 mb-1">GitHub</h3>
+                      <p className="text-white">github.com/MartosAm</p>
                     </div>
                   </div>
-                  {/* Pixel Corners */}
-                  <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-yellow-400"></div>
-                  <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-yellow-400"></div>
-                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-yellow-400"></div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-yellow-400"></div>
                 </div>
               </div>
 
-              {/* Quick Stats */}
-              <div className="bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-yellow-400 rounded-lg p-6 pixel-shadow">
-                <h3 className="font-bold text-xl text-yellow-400 mb-4 text-center">
-                  📊 QUICK STATS
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300 text-sm">✅ Projects Completed</span>
-                    <span className="text-cyan-400 font-bold">50+</span>
+              <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-blue-400 mb-4">Disponibilidad</h3>
+                <div className="space-y-3 text-slate-300">
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Disponible para proyectos</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300 text-sm">😊 Happy Clients</span>
-                    <span className="text-pink-400 font-bold">40+</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300 text-sm">⏱️ Avg Response</span>
-                    <span className="text-green-400 font-bold">&lt;24h</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Respuesta en 24 horas</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="animate-slide-in-right">
+            <div>
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-                <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-pink-500 rounded-lg p-8 pixel-shadow">
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg p-8 hover:border-purple-500 transition-all">
                   <div className="text-center mb-6">
-                    <h3 className="text-2xl font-bold text-pink-400 mb-2">
-                      🎯 START YOUR QUEST! 🎯
+                    <h3 className="text-2xl font-bold text-purple-400 mb-2">
+                      Enviar Mensaje
                     </h3>
                     <p className="text-slate-400 text-sm">
-                      Fill the form to unlock collaboration
+                      Completa el formulario y me pondré en contacto contigo
                     </p>
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-bold text-cyan-400 mb-2">
-                        ▸ PLAYER NAME
+                      <label htmlFor="name" className="block text-sm font-semibold text-slate-300 mb-2">
+                        Nombre
                       </label>
                       <input
                         type="text"
@@ -171,14 +126,14 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-slate-950 border-2 border-slate-700 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 text-white transition-all font-semibold"
-                        placeholder="Enter your name..."
+                        className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 text-white transition-all"
+                        placeholder="Tu nombre"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-bold text-pink-400 mb-2">
-                        ▸ EMAIL ADDRESS
+                      <label htmlFor="email" className="block text-sm font-semibold text-slate-300 mb-2">
+                        Email
                       </label>
                       <input
                         type="email"
@@ -187,14 +142,14 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-slate-950 border-2 border-slate-700 rounded-lg focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-400/20 text-white transition-all font-semibold"
-                        placeholder="your@email.com"
+                        className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 text-white transition-all"
+                        placeholder="tu@email.com"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-bold text-yellow-400 mb-2">
-                        ▸ YOUR MESSAGE
+                      <label htmlFor="message" className="block text-sm font-semibold text-slate-300 mb-2">
+                        Mensaje
                       </label>
                       <textarea
                         id="message"
@@ -203,95 +158,32 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         rows={5}
-                        className="w-full px-4 py-3 bg-slate-950 border-2 border-slate-700 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 text-white transition-all resize-none font-semibold"
-                        placeholder="Describe your project idea..."
+                        className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 text-white transition-all resize-none"
+                        placeholder="Describe tu proyecto..."
                       ></textarea>
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full px-8 py-4 bg-gradient-to-r from-cyan-500 via-pink-500 to-yellow-500 hover:from-yellow-500 hover:via-pink-500 hover:to-cyan-500 text-white rounded-lg font-bold text-lg border-4 border-white transform hover:scale-105 transition-all duration-300 pixel-shadow animate-pulse-neon"
+                      className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300"
                     >
-                      🚀 SEND MESSAGE 🚀
+                      Enviar Mensaje
                     </button>
 
                     {isSubmitted && (
-                      <div className="text-center p-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg border-4 border-white animate-pixel-pop">
-                        <div className="text-white font-bold flex items-center justify-center gap-2">
-                          <span className="text-2xl animate-bounce-pixel">✅</span>
-                          <span>MESSAGE SENT! QUEST ACCEPTED!</span>
-                          <span className="text-2xl animate-bounce-pixel">✅</span>
+                      <div className="text-center p-4 bg-green-500/20 border border-green-500 rounded-lg">
+                        <div className="text-green-400 font-semibold">
+                          Mensaje enviado correctamente
                         </div>
                       </div>
                     )}
                   </form>
-
-                  {/* Pixel Corners */}
-                  <div className="absolute top-0 left-0 w-4 h-4 border-t-4 border-l-4 border-white"></div>
-                  <div className="absolute top-0 right-0 w-4 h-4 border-t-4 border-r-4 border-white"></div>
-                  <div className="absolute bottom-0 left-0 w-4 h-4 border-b-4 border-l-4 border-white"></div>
-                  <div className="absolute bottom-0 right-0 w-4 h-4 border-b-4 border-r-4 border-white"></div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Special Promotion Banner */}
-          <div className="mt-12 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 border-4 border-white rounded-lg p-8 text-center pixel-shadow relative overflow-hidden animate-pulse-neon">
-            <div className="absolute inset-0 opacity-30 animate-float" style={{
-              backgroundImage: `repeating-linear-gradient(
-                -45deg,
-                transparent,
-                transparent 20px,
-                rgba(255, 255, 255, 0.2) 20px,
-                rgba(255, 255, 255, 0.2) 40px
-              )`
-            }}></div>
-            <div className="relative z-10">
-              <div className="text-5xl mb-4 animate-bounce-pixel">🎁💰🎁</div>
-              <h3 className="text-3xl font-bold text-white mb-3">
-                🔥 SPECIAL LAUNCH OFFER! 🔥
-              </h3>
-              <p className="text-white text-xl font-bold mb-2">
-                First 5 clients get <span className="text-yellow-300 text-3xl animate-glitch">30% OFF</span>
-              </p>
-              <p className="text-white/90 text-sm">
-                + FREE maintenance for 3 months + Priority support
-              </p>
-            </div>
-          </div>
-
-          {/* Why Choose Me Section */}
-          <div className="mt-12 grid md:grid-cols-4 gap-4">
-            <div className="bg-slate-800 border-4 border-cyan-400 rounded-lg p-4 text-center pixel-shadow transform hover:scale-105 transition-all">
-              <div className="text-3xl mb-2 animate-bounce-pixel">⚡</div>
-              <h4 className="text-cyan-400 font-bold text-sm mb-1">FAST</h4>
-              <p className="text-slate-400 text-xs">Quick delivery</p>
-            </div>
-            <div className="bg-slate-800 border-4 border-pink-400 rounded-lg p-4 text-center pixel-shadow transform hover:scale-105 transition-all">
-              <div className="text-3xl mb-2 animate-float">💎</div>
-              <h4 className="text-pink-400 font-bold text-sm mb-1">QUALITY</h4>
-              <p className="text-slate-400 text-xs">Premium code</p>
-            </div>
-            <div className="bg-slate-800 border-4 border-yellow-400 rounded-lg p-4 text-center pixel-shadow transform hover:scale-105 transition-all">
-              <div className="text-3xl mb-2 animate-bounce-pixel">🛡️</div>
-              <h4 className="text-yellow-400 font-bold text-sm mb-1">SUPPORT</h4>
-              <p className="text-slate-400 text-xs">Always available</p>
-            </div>
-            <div className="bg-slate-800 border-4 border-green-400 rounded-lg p-4 text-center pixel-shadow transform hover:scale-105 transition-all">
-              <div className="text-3xl mb-2 animate-float">🏆</div>
-              <h4 className="text-green-400 font-bold text-sm mb-1">PROVEN</h4>
-              <p className="text-slate-400 text-xs">50+ projects</p>
-            </div>
-          </div>
         </div>
       </div>
-
-      {/* Floating Elements */}
-      <div className="absolute top-10 left-5 text-4xl animate-float">💫</div>
-      <div className="absolute top-1/3 right-5 text-4xl animate-bounce-pixel">⭐</div>
-      <div className="absolute bottom-1/3 left-5 text-4xl animate-float">✨</div>
-      <div className="absolute bottom-10 right-5 text-4xl animate-bounce-pixel">🌟</div>
     </section>
   )
 }

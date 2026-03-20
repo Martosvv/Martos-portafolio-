@@ -5,23 +5,23 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Sobre Mí
+              Perfil Profesional
             </span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <p className="text-lg text-slate-300 leading-relaxed">
-                Soy un <span className="text-blue-400 font-semibold">Ingeniero Informático</span> apasionado
-                por el desarrollo web y la creación de soluciones tecnológicas innovadoras.
+                Ingeniero Informático y desarrollador web con sólida formación técnica y experiencia práctica
+                en el desarrollo de <span className="text-blue-400 font-semibold">aplicaciones Full Stack</span>.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                Mi especialización es el <span className="text-purple-400 font-semibold">desarrollo web full stack</span>,
-                con enfoque en crear aplicaciones web modernas, escalables y de alto rendimiento.
+                Me considero un desarrollador <span className="text-purple-400 font-semibold">"de campo"</span>,
+                enfocado en analizar procesos reales para mejorar y optimizar flujos de trabajo mediante tecnología.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                Me encanta trabajar con las últimas tecnologías y frameworks, siempre buscando
-                la mejor solución para cada proyecto.
+                Cuento con experiencia en el consumo de APIs, gestión de bases de datos, control de versiones
+                y aplicación de buenas prácticas de desarrollo.
               </p>
             </div>
 
@@ -33,10 +33,10 @@ export default function About() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold">Desarrollo Web</h3>
+                  <h3 className="text-xl font-semibold">Sistemas Full Stack</h3>
                 </div>
                 <p className="text-slate-400">
-                  Experiencia en React, TypeScript, Node.js y frameworks modernos
+                  Desarrollo de aplicaciones web completas con .NET, Angular y Node.js
                 </p>
               </div>
 
@@ -44,13 +44,13 @@ export default function About() {
                 <div className="flex items-center gap-4 mb-2">
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold">Ingeniería</h3>
+                  <h3 className="text-xl font-semibold">Landing Pages</h3>
                 </div>
                 <p className="text-slate-400">
-                  Sólida formación en ingeniería informática y resolución de problemas
+                  Diseño y desarrollo de páginas de aterrizaje modernas y optimizadas
                 </p>
               </div>
             </div>

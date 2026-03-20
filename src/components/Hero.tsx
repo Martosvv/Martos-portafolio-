@@ -42,13 +42,13 @@ export default function Hero() {
           <div className="mb-8 inline-block">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1 animate-spin-slow">
               <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center text-5xl font-bold">
-                M
+                FM
               </div>
             </div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
-            Hola, soy Martos
+            Francisco Adrian Martos Vela
           </h1>
 
           <div className="text-2xl md:text-3xl text-slate-300 mb-8 h-12 font-mono">
@@ -58,9 +58,13 @@ export default function Hero() {
             </span>
           </div>
 
-          <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Ingeniero Informático especializado en desarrollo web moderno.
-            Creando experiencias digitales excepcionales con tecnologías de vanguardia.
+          <p className="text-lg md:text-xl text-slate-400 mb-4 max-w-2xl mx-auto leading-relaxed">
+            Ingeniero Informático especializado en desarrollo de sistemas Full Stack,
+            Landing Pages y soluciones web profesionales.
+          </p>
+
+          <p className="text-md text-slate-500 mb-12">
+            📍 Durango, México
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -68,7 +72,7 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300"
             >
-              Ver Proyectos
+              Ver Experiencia
             </a>
             <a
               href="#contact"
