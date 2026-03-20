@@ -1,34 +1,44 @@
 export default function Skills() {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Lenguajes',
       skills: [
-        { name: 'React', level: 90 },
+        { name: 'C#', level: 90 },
+        { name: 'JavaScript', level: 90 },
         { name: 'TypeScript', level: 85 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'Next.js', level: 80 },
+        { name: 'Python', level: 75 },
       ],
       gradient: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'Backend',
+      title: 'Frameworks & Backend',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express', level: 80 },
-        { name: 'PostgreSQL', level: 75 },
-        { name: 'MongoDB', level: 80 },
+        { name: '.NET 8 / ASP.NET Core', level: 90 },
+        { name: 'Angular', level: 85 },
+        { name: 'Node.js / Express.js', level: 85 },
+        { name: 'Entity Framework Core', level: 80 },
       ],
       gradient: 'from-purple-500 to-pink-500',
     },
     {
-      title: 'Herramientas',
+      title: 'Bases de Datos & Cache',
       skills: [
-        { name: 'Git', level: 90 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 65 },
-        { name: 'Vite', level: 85 },
+        { name: 'SQL Server', level: 85 },
+        { name: 'PostgreSQL', level: 85 },
+        { name: 'MySQL', level: 80 },
+        { name: 'Redis', level: 75 },
       ],
       gradient: 'from-green-500 to-emerald-500',
+    },
+    {
+      title: 'Herramientas & DevOps',
+      skills: [
+        { name: 'Git / GitHub', level: 90 },
+        { name: 'Linux', level: 80 },
+        { name: 'Google Cloud', level: 75 },
+        { name: 'JWT / Swagger', level: 85 },
+      ],
+      gradient: 'from-orange-500 to-red-500',
     },
   ]
 
@@ -42,25 +52,25 @@ export default function Skills() {
             </span>
           </h2>
           <p className="text-center text-slate-400 mb-12 text-lg">
-            Tecnologías y herramientas con las que trabajo
+            Tecnologías y herramientas con las que trabajo profesionalmente
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((category, categoryIndex) => (
               <div
                 key={categoryIndex}
-                className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl border border-slate-700 p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300"
+                className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl border border-slate-700 p-6 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300"
               >
-                <h3 className={`text-2xl font-bold mb-6 bg-gradient-to-r ${category.gradient} bg-clip-text text-transparent`}>
+                <h3 className={`text-xl font-bold mb-6 bg-gradient-to-r ${category.gradient} bg-clip-text text-transparent`}>
                   {category.title}
                 </h3>
 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex}>
                       <div className="flex justify-between mb-2">
-                        <span className="text-slate-300 font-medium">{skill.name}</span>
-                        <span className="text-slate-400 text-sm">{skill.level}%</span>
+                        <span className="text-slate-300 font-medium text-sm">{skill.name}</span>
+                        <span className="text-slate-400 text-xs">{skill.level}%</span>
                       </div>
                       <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
                         <div
@@ -75,18 +85,17 @@ export default function Skills() {
             ))}
           </div>
 
-          {/* Tech logos section */}
           <div className="mt-16 pt-12 border-t border-slate-800">
             <p className="text-center text-slate-400 mb-8">
-              Experiencia trabajando con
+              Experiencia adicional con
             </p>
-            <div className="flex flex-wrap justify-center gap-8 items-center opacity-60">
-              {['React', 'TypeScript', 'Node.js', 'Tailwind', 'Vite', 'MongoDB', 'PostgreSQL', 'Git'].map((tech) => (
+            <div className="flex flex-wrap justify-center gap-4 items-center">
+              {['Git Copilot Pro', 'Jira', 'REST APIs', 'Cybersecurity', 'Machine Learning', 'Swagger'].map((tech) => (
                 <div
                   key={tech}
-                  className="px-6 py-3 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-500 transition-all hover:scale-110"
+                  className="px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-500 transition-all hover:scale-105"
                 >
-                  <span className="text-slate-300 font-mono text-sm">{tech}</span>
+                  <span className="text-slate-300 text-sm">{tech}</span>
                 </div>
               ))}
             </div>
