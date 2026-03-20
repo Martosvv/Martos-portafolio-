@@ -1,14 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #3b82f6;
-  --color-secondary: #8b5cf6;
-  --color-accent: #06b6d4;
+  /* Retro Pixel Art Gaming Color Palette */
+  --color-primary: #00f6ff;
+  --color-secondary: #ff00ff;
+  --color-accent: #ffff00;
+  --color-neon-green: #00ff41;
+  --color-neon-pink: #ff10f0;
+  --color-neon-orange: #ff6600;
+  --color-cyber-blue: #0066ff;
+  --color-arcade-red: #ff0040;
 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Press Start 2P', 'Inter', system-ui, -apple-system, sans-serif;
 
   --animate-spin-slow: spin-slow 3s linear infinite;
   --animate-fade-in: fade-in 0.5s ease-in;
+  --animate-bounce-pixel: bounce-pixel 1s ease-in-out infinite;
+  --animate-glitch: glitch 2s ease-in-out infinite;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pulse-neon: pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-slide-in-left: slide-in-left 0.5s ease-out;
+  --animate-slide-in-right: slide-in-right 0.5s ease-out;
+  --animate-pixel-pop: pixel-pop 0.3s ease-out;
+  --animate-blink: blink 1s step-end infinite;
 
   @keyframes spin-slow {
     from {
@@ -29,6 +43,96 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes bounce-pixel {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes glitch {
+    0%, 100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, -2px);
+    }
+    80% {
+      transform: translate(2px, 2px);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse-neon {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 20px currentColor;
+    }
+    50% {
+      opacity: 0.8;
+      box-shadow: 0 0 2px currentColor, 0 0 5px currentColor, 0 0 10px currentColor;
+    }
+  }
+
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes pixel-pop {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
 }
 
 * {
@@ -40,6 +144,9 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 code {
@@ -53,4 +160,73 @@ code {
 
 .animate-fade-in {
   animation: fade-in 0.5s ease-in;
+}
+
+.animate-bounce-pixel {
+  animation: bounce-pixel 1s ease-in-out infinite;
+}
+
+.animate-glitch {
+  animation: glitch 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-out;
+}
+
+.animate-pixel-pop {
+  animation: pixel-pop 0.3s ease-out;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Pixel Art Border Effect */
+.pixel-border {
+  border-style: solid;
+  border-width: 4px;
+  border-image: repeating-linear-gradient(
+    90deg,
+    #00f6ff 0,
+    #00f6ff 4px,
+    transparent 4px,
+    transparent 8px
+  ) 4;
+}
+
+/* Retro Text Shadow Effect */
+.retro-text-shadow {
+  text-shadow:
+    3px 3px 0 #ff00ff,
+    6px 6px 0 #00f6ff,
+    9px 9px 0 #ffff00;
+}
+
+/* Pixel Perfect Shadows */
+.pixel-shadow {
+  box-shadow:
+    4px 4px 0 rgba(255, 0, 255, 0.5),
+    8px 8px 0 rgba(0, 246, 255, 0.3);
+}
+
+/* Neon Glow Effect */
+.neon-glow {
+  text-shadow:
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 40px currentColor;
 }
