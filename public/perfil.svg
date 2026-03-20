@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Pixel Art Style Profile Avatar -->
+
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f6ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffff00;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="face-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffaa00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer border circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bg-gradient)" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="#1e293b" stroke="url(#bg-gradient)" stroke-width="4"/>
+
+  <!-- Head (pixel style) -->
+  <rect x="60" y="50" width="80" height="80" fill="url(#face-gradient)" rx="10"/>
+
+  <!-- Hair/Hat (retro style) -->
+  <rect x="55" y="40" width="90" height="20" fill="#00f6ff" rx="5"/>
+  <rect x="50" y="35" width="100" height="15" fill="#00f6ff" rx="8"/>
+
+  <!-- Eyes (pixel blocks) -->
+  <rect x="75" y="75" width="12" height="12" fill="#0f172a"/>
+  <rect x="113" y="75" width="12" height="12" fill="#0f172a"/>
+
+  <!-- Eye highlights -->
+  <rect x="78" y="78" width="4" height="4" fill="#00f6ff"/>
+  <rect x="116" y="78" width="4" height="4" fill="#00f6ff"/>
+
+  <!-- Mouth (pixel smile) -->
+  <rect x="85" y="100" width="8" height="4" fill="#0f172a"/>
+  <rect x="93" y="104" width="14" height="4" fill="#0f172a"/>
+  <rect x="107" y="100" width="8" height="4" fill="#0f172a"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="70" cy="95" r="8" fill="#ff00ff" opacity="0.4"/>
+  <circle cx="130" cy="95" r="8" fill="#ff00ff" opacity="0.4"/>
+
+  <!-- Body/Shoulders -->
+  <rect x="40" y="130" width="120" height="60" fill="#8b5cf6" rx="10"/>
+
+  <!-- Collar detail -->
+  <rect x="85" y="130" width="30" height="15" fill="#00f6ff"/>
+
+  <!-- Pixel stars decoration -->
+  <g opacity="0.8">
+    <polygon points="25,60 27,64 31,64 28,67 29,71 25,68 21,71 22,67 19,64 23,64" fill="#ffff00"/>
+    <polygon points="175,140 177,144 181,144 178,147 179,151 175,148 171,151 172,147 169,144 173,144" fill="#ff00ff"/>
+    <polygon points="160,30 162,34 166,34 163,37 164,41 160,38 156,41 157,37 154,34 158,34" fill="#00f6ff"/>
+  </g>
+
+  <!-- Outer glow effect -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="url(#bg-gradient)" stroke-width="2" opacity="0.5"/>
+</svg>
