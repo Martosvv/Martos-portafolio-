@@ -10,19 +10,40 @@ export default function About() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-slate-300 leading-relaxed">
-                Ingeniero Informático y desarrollador web con sólida formación técnica y experiencia práctica
-                en el desarrollo de <span className="text-blue-400 font-semibold">aplicaciones Full Stack</span>.
-              </p>
-              <p className="text-lg text-slate-300 leading-relaxed">
-                Me considero un desarrollador <span className="text-purple-400 font-semibold">"de campo"</span>,
-                enfocado en analizar procesos reales para mejorar y optimizar flujos de trabajo mediante tecnología.
-              </p>
-              <p className="text-lg text-slate-300 leading-relaxed">
-                Cuento con experiencia en el consumo de APIs, gestión de bases de datos, control de versiones
-                y aplicación de buenas prácticas de desarrollo.
-              </p>
+            <div className="flex flex-col items-center md:items-start">
+              <div className="mb-6 w-full flex justify-center md:justify-start">
+                <img
+                  src="/perfil.webp"
+                  alt="Francisco Adrian Martos Vela - Desarrollador Full Stack"
+                  className="w-64 h-64 object-cover rounded-2xl shadow-2xl shadow-blue-500/20 border-2 border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="space-y-6">
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Ingeniero Informático y desarrollador web con sólida formación técnica y experiencia práctica
+                  en el desarrollo de <span className="text-blue-400 font-semibold">aplicaciones Full Stack</span>.
+                </p>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Me considero un desarrollador <span className="text-purple-400 font-semibold">"de campo"</span>,
+                  enfocado en analizar procesos reales para mejorar y optimizar flujos de trabajo mediante tecnología.
+                </p>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Cuento con experiencia en el consumo de APIs, gestión de bases de datos, control de versiones
+                  y aplicación de buenas prácticas de desarrollo.
+                </p>
+                <div className="flex justify-center md:justify-start mt-6">
+                  <a
+                    href="/CV_Adrian Martos.pdf"
+                    download="CV_Adrian_Martos.pdf"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Descargar CV
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-4">
